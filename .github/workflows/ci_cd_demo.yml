@@ -30,7 +30,7 @@ jobs:
     - run: npm ci
     - run: npm run build:prod --if-present
     - run: npm test
-      uses: w9jds/firebase-action@v2
+    - uses: w9jds/firebase-action@v2
       with:
         args: deploy --only hosting
       env:
